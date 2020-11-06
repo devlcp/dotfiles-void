@@ -1,0 +1,58 @@
+#!/bin/bash
+ICON_PATH="$HOME/.config/tint2/icons/bright/"
+HIGH_TEMP=80
+
+amarillo='#F0CBA7'
+
+function get_cpu_temp {
+    CPU_TEMP=$(sensors | awk '/^Package/ {printf $4}')
+}
+
+function get_mem_use {
+    RAM_USE=$(free -h | awk '/^Mem:/ {print $3 "/" $2}' | sed 's/Gi//g')
+}
+
+function get_swap_use {
+	SWAP_USE=$(free -h | awk '/^Swap:/ {print $3 "/" $2}' | sed 's/Gi//g')
+}
+
+function get_cpu_use {
+    read cpu a b c previdle rest < /proc/stat
+    prevtotal=$((a+b+c+previdle))
+    sleep 0.5
+    read cpu a b c idle rest < /proc/stat
+    total=$((a+b+c+idle))
+    cpu=$((100*( (total-prevtotal) - (idle-previdle) ) / (total-prevtotal) ))
+    CPU_USE=$cpu
+}
+
+case "$1" in
+    temp)
+        get_cpu_temp
+        echo " $CPU_TEMP "
+        ;;
+    temp-icon)
+        get_cpu_temp
+        ICN_NAM="temperature-critical"
+        if [ "$CPU_TEMP" -lt "$HIGH_TEMP" ]; then
+            ICN_NAM="temperature"
+        fi
+        echo "${ICON_PATH}${ICN_NAM}.svg"
+        ;;
+    cpu-use)
+        get_cpu_use
+        echo -e " ${CPU_USE}% "
+        ;;
+    ram-use)
+        get_mem_use
+
+	echo "[R ${RAM_USE} "
+        ;;
+    swap-use)
+	get_swap_use
+	echo "S ${SWAP_USE}] "
+	;;
+    *)
+        echo "WRONG INPUT"
+        ;;
+esac

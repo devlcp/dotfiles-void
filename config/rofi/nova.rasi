@@ -1,0 +1,117 @@
+/* vim:ft=css */
+configuration {
+    theme: "nova";
+	  show-icons: true;
+	  sidebar-mode: false;
+    columns: 2;
+    modi: "window,run,ssh";
+    lines: 5;
+    icon-theme: "Arc";
+    font: "Input Mono Medium 12";
+    drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+}
+
+* {
+    black:      #000000;
+    red:        #eb6e67;
+    green:      #95ee8f;
+    yellow:     #f8c456;
+    blue:       #6eaafb;
+    mangenta:   #d886f3;
+    cyan:       #6cdcf7;
+    emphasis:   #4D596C;
+    text:       #dfdfdf;
+    text-alt:   #33A1A1;
+    fg:         #abb2bf;
+    bg:         #93A1A1/*#282c34*/;
+
+    spacing: 0;
+    background-color: #2D343F;
+
+    text-color: @text;
+}
+
+window {
+   /* transparency: "real";*/
+    fullscreen: false;
+    /*background-color: #282c34dd;*/
+    border-radius: 10px;
+    children: [mainbox];
+    width: 40%;
+    position: center;
+}
+
+mainbox {
+    padding: 10px 7px;
+    orientation: vertical;
+    children: [/*prompt, textbox-prompt-colon,*/ entry, listview];
+}
+/*
+prompt {
+    text-color: @blue;
+    font: "Input Mono Black 16";
+    margin: 0 0 0 17em;
+}
+*/
+/*
+textbox-prompt-colon {
+    expand: false;
+str: ":";
+    text-color: @text-alt;
+    background-color: #FF9900;
+}*/
+
+entry {
+    expand: false;
+    position: center;
+    padding: 5px;
+    font: "Input Mono Medium 16";
+    text-color: #262626;
+    background-color: #afbb87;
+    width: 10em;
+    vertical-align: 0.5;
+    border-radius: 5px;
+}
+
+listview {
+    spacing: 5px;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    cycle: true;
+    padding: 10px 0 0 0;
+}
+
+element {
+    padding: 5px;
+    text-color: @text-alt;
+    highlight: bold #95ee8f; /* green */
+    border-radius: 3px;
+}
+
+element selected {
+    background-color: @emphasis;
+    text-color: @text;
+}
+
+element urgent, element selected urgent {
+    text-color: @red;
+}
+
+element active, element selected active {
+    text-color: @purple;
+}
+
+message {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: @emphasis;
+    border: 1px;
+    border-color: @cyan;
+}
+
+button selected {
+    padding: 5px;
+    border-radius: 3px;
+    background-color: @emphasis;
+}
