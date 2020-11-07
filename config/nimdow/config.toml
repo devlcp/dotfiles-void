@@ -16,7 +16,7 @@ keys = [ "d" ]
 modifiers = [ "alt" ]
 
 [[startProcess]]
-command = "xfce4-terminal"
+command = "tym"
 keys = [ "Return" ]
 modifiers = [ "alt" ]
 
