@@ -1,18 +1,25 @@
 configuration {
-	lines: 2;
+  show-icons: true;
+  lines: 1;
 }
 
 * {
-  background-color: #282C33;
+  background-color: transparent;
   border-color: #2e343f;
   text-color: #8ca0aa;
   spacing: 0;
-  width: 512px;
+  orientation: horizontal;
+}
+
+window { 
+  location: north;
+  width: 100%;
 }
 
 inputbar {
   border: 0 0 1px 0;
   children: [entry];
+  width: 170px;
 }
 
 prompt {
@@ -21,27 +28,31 @@ prompt {
 }
 
 textbox {
-  background-color: #2e343f;
   border: 0 0 1px 0;
-  border-color: #282C33;
-  padding: 8px 16px;
+  border-color: #acb4c2;
+  padding: 2px 2px;
 }
 
 entry {
-  padding: 16px;
+  background-color:#acb4c2; 
+  color: #1d3b53;
+  padding: 2px 5px;
 }
 
 listview {
   cycle: false;
   margin: 0 0 -1px 0;
   scrollbar: false;
+  columns: 5;
+  background-color: #011627;
 }
 
 element {
   border: 0 0 1px 0;
-  padding: 10px 16px;
+  padding: 2px 15px;
 }
 
 element selected {
-  background-color: #2e343f;
+  background-color: #1d3b53;
 }
+/* vim:ft=css
