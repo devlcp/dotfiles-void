@@ -21,8 +21,8 @@ Mod=Mod1    # Use alt as the main modifier
 hc keybind $Mod-Shift-q quit
 hc keybind $Mod-Shift-r reload
 hc keybind $Mod-Shift-c close
-hc keybind $Mod-Return spawn "${TERMINAL:-xfce4-terminal}" # use your $TERMINAL with xterm as fallback
-hc keybind $Mod-d spawn rofi -show drun -theme nova
+hc keybind $Mod-Return spawn "${TERMINAL:-tym}" # use your $TERMINAL with xterm as fallback
+hc keybind $Mod-d spawn rofi -show drun -theme slate
 
 hc spawn compton
 # hc spawn redshift -l 20.33:-102.76
