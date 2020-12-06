@@ -6,10 +6,6 @@
       			"rootPatterns": ["go.mod"],
       			"filetypes": ["go"]
 		},
-		"lua": {
-		      "command": "lua-lsp",
-		      "filetypes": ["lua"]
-    		},
 		"julia": {
 		      "command": "/usr/bin/julia",
 		      "args" : ["--startup-file=no", "--history-file=no", "-e",
@@ -20,6 +16,6 @@
 		      "command": "ra_lsp_server",
 		      "filetypes": ["rust"],
 		      "rootPatterns": ["Cargo.toml"]
-    		}
+		}
 	}
 }

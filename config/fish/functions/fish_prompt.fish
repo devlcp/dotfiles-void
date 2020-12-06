@@ -1,1 +1,1 @@
-/home/devlcp/.local/share/omf/themes/rider/fish_prompt.fish
+/home/devlcp/.local/share/omf/themes/toaster/fish_prompt.fish

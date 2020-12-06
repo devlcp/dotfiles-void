@@ -3,7 +3,7 @@ local tym = require('tym')
 -- set config individually
 tym.set('width', 100)
 
-tym.set('font', 'Iosevka Mayukai Medium 12')
+tym.set('font', 'JetBrains Mono Regular 12')
 
 -- set by table
 tym.set_config({
@@ -14,7 +14,6 @@ tym.set_config({
   scrollback_length = 1000,
   -- background_image = '/xd/Temporales/CONFIG/wallper/iron-man-fly-view.png',
   autohide = true,
-  color_foreground = '#ebdbb2',
 })
 
 -- ATAJOS DE TECLADO

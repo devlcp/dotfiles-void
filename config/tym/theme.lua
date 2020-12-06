@@ -1,5 +1,5 @@
-local bg = 'rgba(1, 22, 39, 0.90)'
-local fg = 'rgba(172, 180, 194, 0.90)'
+local bg = 'rgba(238, 238, 238, 0.90)'
+local fg = 'rgba(0, 95, 135, 0.90)'
 
 return {
   color_background = bg,
@@ -9,20 +9,20 @@ return {
   color_cursor_foreground = bg,
   color_highlight = fg,
   color_highlight_foreground = bg,
-  color_0  = '#1D3B53',
-  color_1  = '#fc514e', 
-  color_2  = '#a1cd5e',
-  color_3  = '#e3d18a',--brown
-  color_4  = '#82aaff',
-  color_5  = '#c792ea',
-  color_6  = '#7fdbca',
-  color_7  = '#a1aab8',
-  color_8  = '#7c8f8f',
-  color_9  = '#ff5874',
-  color_10 = '#21c7a8',
-  color_11 = '#ECC48D',
-  color_12 = '#82aaff',
-  color_13 = '#ae81ff',
-  color_14 = '#7fdbca',
-  color_15 = '#d6deeb',
+  color_0  = '#008700',
+  color_1  = '#5f8700', 
+  color_2  = '#0087af',
+  color_3  = '#878787',--brown
+  color_4  = '#005f87',
+  color_5  = '#444444',
+  color_6  = '#bcbcbc',
+  color_7  = '#d70000',
+  color_8  = '#d70087',
+  color_9  = '#8700af',
+  color_10 = '#d75f00',
+  color_11 = '#d75f00',
+  color_12 = '#005faf',
+  color_13 = '#005f87',
+  color_14 = '#0087af',
+  color_15 = '#008700',
 }

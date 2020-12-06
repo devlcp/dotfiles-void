@@ -16,13 +16,14 @@ keys = [ "d" ]
 modifiers = [ "alt" ]
 
 [[startProcess]]
-command = "tym"
+command = "terminator"
 keys = [ "Return" ]
 modifiers = [ "alt" ]
 
 [autostart]
 exec = [
   "xsetroot -cursor_name left_ptr",
+  "menu_nim",
   "compton",
   "redshift-gtk -l 20.33:-102.76",
   "setxkbmap dvorak",
