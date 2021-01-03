@@ -28,7 +28,7 @@ set -g theme_project_dir_length 1
 # Personal Config
 set -Ux EDITOR nvim
 set -Ux TERM xfce4-terminal
-set -gx PATH /usr/local/go/bin $HOME/.local/bin $HOME/bin/flutter/bin $HOME/.cargo/bin $GOPATH $HOME/.nimble/bin /usr/lib/dart/bin $PATH
+set -gx PATH /usr/local/go/bin $HOME/.radicle/bin $HOME/.local/bin $HOME/bin/flutter/bin $HOME/.cargo/bin $GOPATH $HOME/.nimble/bin /usr/lib/dart/bin $PATH
 set -gx GOPATH $HOME/.local/bin/go
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx FZF_DEFAULT_COMMAND  'rg --files --follow --hidden'
@@ -95,3 +95,5 @@ function dev
 			echo [julia, go, rust, dot]
 	end
 end
+
+starship init fish | source
