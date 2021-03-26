@@ -16,6 +16,11 @@ Software:
 
 # ln -s /etc/sv/dbus /var/service/
 ```
+Nimdow WM:
+```bash
+xbps-install libXft-devel libXinerama-devel 
+
+```
 
 ## ERRORS FIXED
 
@@ -24,6 +29,11 @@ Software:
 ```bash
 sudo ntpd
 ```
+
+### Opera video error
+
+* Download [libffmpeg](https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases)
+* Remplace `/usr/lib/opera/`libffmpeg.so
 
 ### Firefox font error
 
@@ -68,6 +78,9 @@ Create file `~/.config/fontconfig/fonts.conf` and add:
  </match>
 </fontconfig>
 ```
+Install __nvm__ for fish-shell:
+
+- https://github.com/FabioAntunes/fish-nvm
 
 Add this to `~/.Xresources`:
 
