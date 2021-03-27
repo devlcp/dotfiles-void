@@ -33,11 +33,7 @@ sudo ntpd
 ### Opera video error
 
 * Download [libffmpeg](https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases)
-<<<<<<< HEAD
-* Remplace `/usr/lib/opera/`libffmpeg.so
-=======
-* Replace `/usr/lib/opera/`libffmpeg.so
->>>>>>> test
+* Replace `/usr/lib/opera/libffmpeg.so`
 
 ### Firefox font error
 
