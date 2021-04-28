@@ -12,7 +12,8 @@ Software:
 
 ```bash
 # xbps-install elogind dbus xorg git nodejs yarn python3-pip curl compton
-\ firefox xfce4-terminal dmenu herbstluftwm ranger fish-shell sudo
+\ firefox xfce4-terminal dmenu herbstluftwm ranger fish-shell sudo flatpak
+\ xdg-desktop-portal
 
 # ln -s /etc/sv/dbus /var/service/
 ```
@@ -33,11 +34,7 @@ sudo ntpd
 ### Opera video error
 
 * Download [libffmpeg](https://github.com/iteufel/nwjs-ffmpeg-prebuilt/releases)
-<<<<<<< HEAD
-* Remplace `/usr/lib/opera/`libffmpeg.so
-=======
 * Replace `/usr/lib/opera/`libffmpeg.so
->>>>>>> test
 
 ### Firefox font error
 
