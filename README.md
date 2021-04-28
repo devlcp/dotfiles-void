@@ -1,5 +1,10 @@
 # MAIN
 
+### Icons and Theme
+
+Create __.icons__ and __.themes__ directory on [_home_](_home_)
+
+
 
 ### Install Neovim 5
 
