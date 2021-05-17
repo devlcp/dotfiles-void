@@ -1,5 +1,9 @@
 # MAIN
 
+### CONFIG
+
+- Neovim -> [Link](./config/nvim/README.md)
+
 ### Icons and Theme
 
 Create __.icons__ and __.themes__ directory on [_home_](_home_)
