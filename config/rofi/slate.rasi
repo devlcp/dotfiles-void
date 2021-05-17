@@ -1,5 +1,6 @@
 configuration {
   show-icons: true;
+  drun-icon-theme: "Newaita";
   lines: 1;
 }
 
