@@ -4,7 +4,13 @@
 
 Create __.icons__ and __.themes__ directory on [_home_](_home_)
 
+Icons:
 
+- Newaita ([Link](https://github.com/cbrnix/Newaita))
+
+Theme:
+
+- Desert ([Link](https://www.gnome-look.org/p/1449286/))
 
 ### Install Neovim 5
 
