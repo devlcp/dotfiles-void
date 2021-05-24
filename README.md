@@ -1,5 +1,14 @@
 # MAIN
 
+#### Void
+`
+# xbps-install sudo rofi xfce4-terminal redshift-gtk devilspie fish-shell volumeicon alsa-utils pulseaudio
+`
+#### Debian
+`
+# apt install sudo rofi xfce4-terminal redshift-gtk devilspie fish volumeicon alsa-utils pulseaudio
+`
+
 ### CONFIG
 
 - Neovim -> [Link](./config/nvim/README.md)
@@ -16,10 +25,30 @@ Theme:
 
 - Desert ([Link](https://www.gnome-look.org/p/1449286/))
 
+### Devilspie
+`
+mkdir .devilspie
+
+Example:
+
+--- tym.ds ---
+
+(if (is (application_name) "tym")
+    (begin 
+        (if (is (window_role) "")
+            (begin 
+                (undecorate)
+            )
+        )
+    )
+)
+`
+More info([devilspie](https://help.ubuntu.com/community/Devilspie))
+
 ### Install Neovim 5
 
 ```bash
-sudo xbps-insatall cmake ninja base-devel unzip
+sudo xbps-install cmake ninja base-devel unzip
 git clone https://github.com/neovim/neovim.git
 make clean
 sudo make install
