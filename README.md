@@ -2,14 +2,15 @@
 
 #### Void
 
-`
+```
 # xbps-install sudo rofi xfce4-terminal redshift-gtk devilspie fish-shell volumeicon alsa-utils pulseaudio
-`
+```
+
 #### Debian
 
-`
+```
 # apt install sudo rofi xfce4-terminal redshift-gtk devilspie fish volumeicon alsa-utils pulseaudio
-`
+```
 
 ### CONFIG
 
@@ -28,7 +29,7 @@ Theme:
 - Desert ([Link](https://www.gnome-look.org/p/1449286/))
 
 ### Devilspie
-`
+```
 mkdir .devilspie
 
 Example:
@@ -44,7 +45,7 @@ Example:
         )
     )
 )
-`
+```
 
 More info([devilspie](https://help.ubuntu.com/community/Devilspie))
 
