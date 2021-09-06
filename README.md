@@ -1,10 +1,12 @@
 # MAIN
 
 #### Void
+
 `
 # xbps-install sudo rofi xfce4-terminal redshift-gtk devilspie fish-shell volumeicon alsa-utils pulseaudio
 `
 #### Debian
+
 `
 # apt install sudo rofi xfce4-terminal redshift-gtk devilspie fish volumeicon alsa-utils pulseaudio
 `
@@ -43,6 +45,7 @@ Example:
     )
 )
 `
+
 More info([devilspie](https://help.ubuntu.com/community/Devilspie))
 
 ### Install Neovim 5
