@@ -1,1 +1,0 @@
-/home/devlcp/.local/share/omf/themes/toaster/fish_prompt.fish
