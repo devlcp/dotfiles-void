@@ -1,4 +1,9 @@
-require('telescope').setup{
+local actions = require("telescope.actions")
+local trouble = require("trouble.providers.telescope")
+
+local telescope = require('telescope')
+
+telescope.setup{
   defaults = {
     vimgrep_arguments = {
       'rg',
@@ -39,6 +44,15 @@ require('telescope').setup{
     qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
 
     -- Developer configurations: Not meant for general override
-    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker
+    buffer_previewer_maker = require'telescope.previewers'.buffer_previewer_maker,
+    mappings = {
+      i = { ["<c-x>"] = trouble.open_with_trouble },
+      n = { ["<c-x>"] = trouble.open_with_trouble },
+    },
+  },
+  extensions = {
   }
 }
+
+telescope.load_extension("emoji")
+telescope.load_extension("gh")

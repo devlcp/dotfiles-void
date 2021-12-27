@@ -13,6 +13,9 @@ for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
         on_attach = custom_attach,
         capabilities = capabilities,
+        flags = {
+          debounce_text_changes = 150,
+        }
     }
 end
 
