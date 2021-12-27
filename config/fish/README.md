@@ -1,16 +1,13 @@
-### Install
+### Basic Install
 
-##### OhMyFish
-```bash
-curl -L https://get.oh-my.fish | fish
-```
-
-##### Fisher
+- Starship
 
 ```bash
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 ```
 
-# Fisher Plugin
+- Ohmyfish
 
-- fisher add danhper/fish-ssh-agent  
+```bash
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+```

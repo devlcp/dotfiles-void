@@ -28,18 +28,29 @@ set -g theme_project_dir_length 1
 # Personal Config
 set -Ux EDITOR nvim
 set -Ux TERM xfce4-terminal
-set -gx PATH /usr/local/go/bin $HOME/.radicle/bin $HOME/.local/bin $HOME/bin/flutter/bin $HOME/.cargo/bin $GOPATH $HOME/.nimble/bin /usr/lib/dart/bin $PATH
+set -Ux NODE_VERSION (node -v)
+set -Ux NODE_BIN $NVM_DIR/versions/node/$NODE_VERSION
+set -gx PATH /usr/local/go/bin $NVM_DIR $NODE_BIN $HOME/.deno/bin $HOME/.radicle/bin $HOME/.local/bin $HOME/bin/flutter/bin $HOME/.cargo/bin $GOPATH/bin $HOME/.nimble/bin /usr/lib/dart/bin $PATH
 set -gx GOPATH $HOME/.local/bin/go
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx FZF_DEFAULT_COMMAND  'rg --files --follow --hidden'
+set -gx NVM_DIR $XDG_CONFIG_HOME/nvm
 
 #	SHORTCUTS USER
-function aoeu
+function qwerty
 	command setxkbmap us
 end
 
-function asdf
+function dvorak
 	command setxkbmap dvorak
+end
+
+function dvp
+	command setxkbmap -layout us -variant dvp -option compose:102 -option keypad:atm -option numpad:shift3 -option kpdl:semi
+end
+
+function edit -d "Alias 'nvim'"
+	command nvim $argv
 end
 
 function xbps
@@ -54,7 +65,6 @@ function xbps
 			command sudo xbps-install -Su
 		case '*'
 			echo [install, search, remove]
-
 	end
 end
 
@@ -69,9 +79,10 @@ function e
 			cd ~/.config/openbox/
 			command ls
 		case nvim
-			command $EDITOR ~/.config/nvim/init.vim
+			command $EDITOR ~/.config/nvim/init.lua
 		case source
 			source ~/.config/fish/config.fish
+            echo "Fish config sourced"
 		case '*'
 			echo [awesome, fish, openbox, nvim, source]
 	end
