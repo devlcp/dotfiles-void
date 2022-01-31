@@ -7,8 +7,8 @@ end
 
 require('settings.let')
 require('settings.set')
-require('cmd.global')
-require('ui.global')
+require('cmd.main')
+require('ui.main')
 
 require('plugin.packer')
 -- config
@@ -31,4 +31,5 @@ require('plugin/config.todo_comments')
 require('plugin/config.which_key')
 require('plugin/config.nvim_cmp')
 require('plugin/config.cmp_npm')
+-- require('plugin/config.compe')
 -- require('plugin/config.formatter')
