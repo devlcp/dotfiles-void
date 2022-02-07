@@ -1,11 +1,7 @@
-/* vim:ft=css */
 configuration {
-    theme: "nova";
-	  show-icons: true;
-	  sidebar-mode: false;
-    columns: 2;
+    show-icons: true;
+    sidebar-mode: false;
     modi: "window,run,ssh";
-    lines: 5;
     icon-theme: "Arc";
     font: "Input Mono Medium 12";
     drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
@@ -39,6 +35,8 @@ window {
     children: [mainbox];
     width: 40%;
     position: center;
+    border: 2;
+    border-color: white;
 }
 
 mainbox {
@@ -77,6 +75,8 @@ listview {
     spacing: 5px;
     dynamic: true;
     scrollbar: false;
+    lines: 5;
+    columns: 2;
     layout: vertical;
     cycle: true;
     padding: 10px 0 0 0;
@@ -115,3 +115,4 @@ button selected {
     border-radius: 3px;
     background-color: @emphasis;
 }
+/* vim:ft=css

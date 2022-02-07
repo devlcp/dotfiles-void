@@ -1,7 +1,6 @@
 configuration {
   show-icons: true;
   drun-icon-theme: "Newaita";
-  lines: 1;
 }
 
 * {
@@ -18,7 +17,8 @@ window {
 }
 
 inputbar {
-  border: 0 0 1px 0;
+  border: 0 5 0 5;
+  border-color: #9FC69F;
   children: [entry];
   width: 170px;
 }
@@ -44,7 +44,8 @@ listview {
   cycle: false;
   margin: 0 0 -1px 0;
   scrollbar: false;
-  columns: 5;
+  columns: 6;
+  lines: 1;
   background-color: #011627;
 }
 
