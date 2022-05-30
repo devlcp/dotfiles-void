@@ -39,7 +39,6 @@ return require('packer').startup(function()
     }
     use 'norcalli/nvim-colorizer.lua'
     use 'hoob3rt/lualine.nvim'
-    -- use 'mhartington/formatter.nvim'
     use 'folke/todo-comments.nvim'
     use 'folke/trouble.nvim' 
     use 'folke/which-key.nvim'
@@ -72,7 +71,7 @@ return require('packer').startup(function()
     use 'terrortylor/nvim-comment'
     use 'sheerun/vim-polyglot'
     -- Terminal
-    use 'akinsho/nvim-toggleterm.lua'
+    use 'akinsho/toggleterm.nvim'
     use 'kyazdani42/nvim-tree.lua' -- file explorer
     use 'akinsho/bufferline.nvim'
     use {

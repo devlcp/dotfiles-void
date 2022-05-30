@@ -1,8 +1,8 @@
 local config = require 'nvim-treesitter.configs'
 
 config.setup {
-  ensure_installed = 'maintained', 
-  highlight = {enable = true}, 
+  ensure_installed = 'all', 
+  highlight = { enable = true }, 
   ignore_install = { },
   indent = {
     enable = true,

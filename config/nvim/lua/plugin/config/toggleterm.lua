@@ -9,12 +9,27 @@ require"toggleterm".setup{
   end,
   hide_numbers = true, -- hide the number column in toggleterm buffers
   shade_filetypes = {},
-  shade_terminals = true,
-  shading_factor = '<number>', -- the degree by which to darken to terminal colour, default: 1 for dark backgrounds, 3 for light
+  highlights = {
+    -- highlights which map to a highlight group name and a table of it's values
+    -- NOTE: this is only a subset of values, any group placed here will be set for the terminal window split
+    Normal = {
+      guibg = 1,
+    },
+    NormalFloat = {
+      link = 'Normal'
+    },
+    FloatBorder = {
+      guifg = "#8088A8",
+      guibg = "#8088A8",
+    },
+  },
+  shade_terminals = true, -- NOTE: this option takes priority over highlights specified so if you specify Normal highlights you should set this to false
+  shading_factor = '1', -- the degree by which to darken to terminal colour, default: 1 for dark backgrounds, 3 for light
   start_in_insert = true,
   insert_mappings = true, -- whether or not the open mapping applies in insert mode
+  terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
   persist_size = true,
-  direction = 'float',
+  direction = 'vertical',
   close_on_exit = true, -- close the terminal window when the process exits
   shell = vim.o.shell, -- change the default shell
   -- This field is only relevant if direction is set to 'float'
@@ -25,9 +40,4 @@ require"toggleterm".setup{
     -- not natively supported but implemented in this plugin.
     border = 'curved',
     winblend = 5,
-    highlights = {
-      border = "Normal",
-      background = "Normal",
-    }
-  }
-}
+  }}
