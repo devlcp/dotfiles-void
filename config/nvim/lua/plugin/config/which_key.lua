@@ -89,7 +89,12 @@ which_key.register({
         },
         x = {
             name = "+Code",
-            t = { "<cmd>TroubleToggle<cr>", "Diagnostic code" }
+            t = { "<cmd>TroubleToggle<cr>", "Diagnostic code" },
+            x = { "<cmd>TestFile<cr>", "Runs all tests in the current file"},
+            X = { "<cmd>TestNearest<cr>", "Runs the test nearest to the cursor"},
+            a = { "<cmd>TestSuite<cr>", "Runs the whole test suite" },
+            l = { "<cmd>TestLast<cr>", "Runs the last test" },
+            g = { "<cmd>TestVisit<cr>", "Visits the test file from which you last run your tests" }
         },
         q = { "<cmd>q<cr>", "Close editor" }
     }
