@@ -89,4 +89,6 @@ return require('packer').startup(function()
             require"octo".setup()
         end
     }
+     
+    use 'vim-test/vim-test'
 end)
