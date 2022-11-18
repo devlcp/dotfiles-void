@@ -1,0 +1,4 @@
+#! /usr/bin/sh
+
+sudo hda-verb /dev/snd/hwC0D0 0x20 0x500 0x8
+sudo hda-verb /dev/snd/hwC0D0 0x20 0x42f 0xcf
