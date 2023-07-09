@@ -27,8 +27,6 @@ cmd('n','<leader>nr', ':NvimTreeRefresh<CR>', { noremap = true, silent = false }
 -- ToggleTerm
 cmd('n', '<F2>', ':2ToggleTerm<CR>', { noremap = true, silent = true })
 -- Telescope
-cmd('n','<leader>ff', '<cmd>Telescope find_files<CR>', { noremap = true, silent = false })
-cmd('n','<leader>fg', '<cmd>Telescope live_grep<CR>', { noremap = true, silent = false })
 cmd('n','<leader>tb', '<cmd>Telescope buffers<CR>', { noremap = true, silent = false })
 cmd('n','<leader>th', '<cmd>Telescope help_tags<CR>', { noremap = true, silent = false })
 -- Buffer
@@ -45,8 +43,6 @@ cmd('n', '<C-Right>', ':vertical resize +2<CR>', { noremap = true, silent = true
 cmd('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
 -- Select or cut text to use as $TM_SELECTED_TEXT in the next snippet.
 -- See https://github.com/hrsh7th/vim-vsnip/pull/50
-cmd('n', 's', '<Plug>(vsnip-select-text)', { noremap = false, silent = false })
-cmd('x', 's', '<Plug>(vsnip-select-text)', { noremap = false, silent = false })
 cmd('n', 'S', '<Plug>(vsnip-cut-text)', { noremap = false, silent = false })
 cmd('x', 'S', '<Plug>(vsnip-cut-text)', { noremap = false, silent = false })
 

@@ -30,7 +30,7 @@ set -Ux EDITOR nvim
 set -Ux TERM xfce4-terminal
 set -Ux NODE_VERSION (node -v)
 set -Ux NODE_BIN $NVM_DIR/versions/node/$NODE_VERSION
-set -gx PATH /usr/local/go/bin $NVM_DIR $NODE_BIN $HOME/.deno/bin $HOME/.radicle/bin $HOME/.local/bin $HOME/bin/flutter/bin $HOME/.cargo/bin $GOPATH/bin $HOME/.nimble/bin /usr/lib/dart/bin $PATH
+set -gx PATH /usr/local/go/bin $NVM_DIR $NODE_BIN $HOME/.deno/bin $HOME/.radicle/bin $HOME/.local/bin $HOME/.local/share/bob/nvim-bin $HOME/bin/flutter/bin $HOME/.cargo/bin $GOPATH/bin $HOME/.nimble/bin /usr/lib/dart/bin $PATH
 set -gx GOPATH $HOME/.local/bin/go
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx FZF_DEFAULT_COMMAND  'rg --files --follow --hidden'
