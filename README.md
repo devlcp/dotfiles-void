@@ -3,7 +3,7 @@
 #### Void
 
 ```
-# xbps-install sudo rofi xfce4-terminal redshift-gtk devilspie fish-shell volumeicon alsa-utils pulseaudio
+# xbps-install sudo rofi wezterm redshift-gtk devilspie fish-shell volumeicon alsa-utils pulseaudio
 ```
 
 #### Debian
