@@ -1,8 +1,8 @@
 configuration {
     show-icons: true;
     sidebar-mode: false;
-    modi: "window,run,ssh";
-    icon-theme: "Arc";
+    modi: "window,run,ssh,drun";
+    icon-theme: "Qogir-dark";
     font: "Input Mono Medium 12";
     drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
 }
@@ -16,26 +16,23 @@ configuration {
     mangenta:   #d886f3;
     cyan:       #6cdcf7;
     emphasis:   #4D596C;
-    text:       #dfdfdf;
+    text:       #C0CAF5;
     text-alt:   #33A1A1;
-    fg:         #abb2bf;
-    bg:         #93A1A1/*#282c34*/;
+    fg:         #3B4261;
+    bg:         #24273A;
 
     spacing: 0;
-    background-color: #2D343F;
-
+    background-color: #24273A;
     text-color: @text;
 }
 
 window {
    /* transparency: "real";*/
     fullscreen: false;
-    /*background-color: #282c34dd;*/
     border-radius: 10px;
     children: [mainbox];
     width: 40%;
     position: center;
-    border: 2;
     border-color: white;
 }
 
@@ -64,8 +61,8 @@ entry {
     position: center;
     padding: 5px;
     font: "Input Mono Medium 16";
-    text-color: #262626;
-    background-color: #afbb87;
+    text-color: @text;
+    background-color: @fg;
     width: 10em;
     vertical-align: 0.5;
     border-radius: 5px;
@@ -83,15 +80,24 @@ listview {
 }
 
 element {
+  background-color: transparent;
     padding: 5px;
-    text-color: @text-alt;
-    highlight: bold #95ee8f; /* green */
+    text-color: @text;
     border-radius: 3px;
 }
 
 element selected {
-    background-color: @emphasis;
-    text-color: @text;
+    background-color: @fg;
+    color: red;
+}
+
+element-icon {
+  background-color: transparent;
+}
+
+element-text {
+  background-color: transparent;
+  margin: 0 0 0 10px;
 }
 
 element urgent, element selected urgent {
